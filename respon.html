@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Webseite</title>
+    <link rel="stylesheet" href="respon.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Markazi+Text:wght@400..700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="menu">
+                <div class="logo">
+                    <a class="material-symbols-outlined">handyman</a>
+                </div>
+                <ul>
+                    <li><a href="#Start">Willkommen</a></li>
+                    <li><a href="#ueberUns">Über Uns</a></li>
+                    <li><a href="#Leistungen">Leistungen</a></li>
+                    <li><a href="#Kontakt">Kontakt</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="Start">
+            <div class="ContainerWillkommen">
+                <h1>Ihr Zuhause. Unser Service</h1>
+                <h2>
+                    Mit Mainhausmeister genießen Sie Rundum-Sorglos-Pakete für Ihr Zuhause – zuverlässig,
+                    professionell und individuell auf Ihre Bedürfnisse abgestimmt.
+                </h2>
+                <a href="#ueberUns" class="button-28">Mehr erfahren</a>
+            </div>
+        </section>
+
+        <section id="ueberUns">
+            <div class="ÜberUns">
+                <h1>Unsere Mission: Ihr Zuhause gepflegt</h1>
+              <p>Willkommen bei Mainhausmeister – Ihrem verlässlichen Partner für Hausmeister- und Gartenservices. Wir kümmern uns mit Sorgfalt und Engagement um die Pflege und Wartung Ihrer Immobilie, damit Sie mehr Zeit für die schönen Dinge im Leben haben.
+            <br>
+            <br>
+                 Ob Reparaturen, regelmäßige Wartung oder Gartenpflege – wir bieten maßgeschneiderte Lösungen, die genau auf Ihre Bedürfnisse abgestimmt sind. Qualität, Zuverlässigkeit und persönlicher Service stehen dabei immer an erster Stelle.
+             <br>
+             <br>
+                 Vertrauen Sie auf unseren Service und lassen Sie uns gemeinsam dafür sorgen, dass Ihr Zuhause immer in besten Händen ist.</p>
+            </div>
+        </section>
+
+       <section id="Leistungen">
+    <div class="HeadLeistungen">
+        <h1>Unsere Leistungen auf einen Blick</h1>
+    </div>
+    <div class="cards-container">
+        <div class="card">
+            <span class="material-symbols-outlined">settings</span>
+            <h2>Technische Wartung und Notfallservice</h2>
+            <p>Sicherstellung der einwandfreien Funktion Ihrer technischen Anlagen durch regelmäßige Wartung und schnelle Hilfe bei Störungen.</p>
+        </div>
+        <div class="card">
+            <span class="material-symbols-outlined">vacuum</span>
+            <h2>Reinigungs- und Pflegeleistungen</h2>
+            <p>Von der Treppenhausreinigung bis zur regelmäßigen Pflege Ihrer Außenanlagen – wir sorgen für Sauberkeit und Ordnung.</p>
+        </div>
+        <div class="card">
+            <span class="material-symbols-outlined">ac_unit</span>
+            <h2>Winterdienstleistungen</h2>
+            <p>Effizienter Winterdienst, um Ihre Wege und Anlagen auch in den kälteren Monaten sicher und gepflegt zu halten.</p>
+        </div>
+        <div class="card">
+            <span class="material-symbols-outlined">speed</span>
+            <h2>Zählerstandserfassung</h2>
+            <p>Zuverlässiges Ablesen von Zählerständen zur genauen Berechnung von Verbrauch und Kosten.</p>
+        </div>
+    </div>
+</section>
+
+
+        <section id="Kontakt">
+            <h1>Kontaktieren Sie uns</h1>
+            <form class="contact-form">
+                <div class="form-group">
+                    <label for="vorname">Vorname</label>
+                    <input type="text" id="vorname" name="vorname" placeholder="Ihr Vorname" required>
+                </div>
+                <div class="form-group">
+                    <label for="nachname">Nachname</label>
+                    <input type="text" id="nachname" name="nachname" placeholder="Ihr Nachname" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">E-Mail-Adresse</label>
+                    <input type="email" id="email" name="email" placeholder="Ihre E-Mail-Adresse" required>
+                </div>
+                <div class="form-group">
+                    <label for="telefon">Telefonnummer</label>
+                    <input type="tel" id="telefon" name="telefon" placeholder="Ihre Telefonnummer" required>
+                </div>
+                <div class="form-group">
+                    <label for="nachricht">Nachricht</label>
+                    <textarea id="nachricht" name="nachricht" rows="5" placeholder="Ihre Nachricht" required></textarea>
+                </div>
+                <button type="submit" class="submit-button">Senden</button>
+            </form>
+        </section>
+    </main>
+</body>
+</html>

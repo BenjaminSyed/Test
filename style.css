@@ -233,7 +233,7 @@ nav {
 
 .contact-form {
     max-width: 600px;
-    width: 450px;
+    width: 100%;
     margin: 0 auto;
     background: rgba(0, 0, 0, 0.7);
     padding: 30px;

@@ -218,9 +218,13 @@ nav {
     text-align: center;
     padding: 50px 20px;
 }
+#Kontakt h1{
+    font-size: 2.0rem;
+}
 
 .contact-form {
     max-width: 600px;
+    width: 450px;
     margin: 0 auto;
     background: rgba(0, 0, 0, 0.7);
     padding: 30px;
@@ -236,6 +240,7 @@ nav {
     display: block;
     font-weight: bold;
     margin-bottom: 5px;
+    font-size: 1.5rem;
 }
 
 .contact-form input,
@@ -244,6 +249,7 @@ nav {
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 5px;
+    font-size:  1.1112rem;
 }
 
 .contact-form button {
@@ -254,6 +260,7 @@ nav {
     border-radius: 5px;
     cursor: pointer;
     transition: background 0.3s;
+    font-size: 1.2rem;
 }
 
 .contact-form button:hover {

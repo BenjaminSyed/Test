@@ -220,24 +220,30 @@ nav {
 
 /* KONTAKT */
 #Kontakt {
+    display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
     background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.2)), url('towfiqu-barbhuiya-ho-p7qLBewk-unsplash.jpg');
     background-size: cover;
     color: white;
     text-align: center;
     padding: 50px 20px;
 }
-#Kontakt h1{
-    font-size: 2.0rem;
+
+#Kontakt h1 {
+    font-size: 2rem;
 }
 
+/* Kontaktformular */
 .contact-form {
-    max-width: 450px;
-    width: 100%;
-    margin: 0 auto;
+    max-width: 450px; /* Maximale Breite des Formulars */
+    width: 100%; /* Passt sich kleineren Bildschirmen an */
+    margin: 0 auto; /* Zentriert das Formular */
     background: rgba(0, 0, 0, 0.7);
     padding: 30px;
     border-radius: 10px;
+    box-sizing: border-box; /* Verhindert Breite außerhalb des Containers */
 }
 
 .contact-form .form-group {
@@ -258,7 +264,7 @@ nav {
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 5px;
-    font-size:  1.1112rem;
+    font-size: 1.1112rem;
 }
 
 .contact-form button {
@@ -276,3 +282,30 @@ nav {
     background: black;
     color: white;
 }
+
+/* Medienabfrage für kleinere Geräte */
+@media (max-width: 768px) {
+    #Kontakt {
+        padding: 30px 15px; /* Weniger Padding für kleinere Bildschirme */
+    }
+
+    #Kontakt h1 {
+        font-size: 1.8rem; /* Kleinere Schriftgröße */
+    }
+
+    .contact-form {
+        padding: 20px; /* Weniger Innenabstand */
+    }
+
+    .contact-form label {
+        font-size: 1.2rem; /* Kleinere Schriftgröße */
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+        font-size: 0.9rem; /* Kleinere Schriftgröße */
+    }
+
+    .contact-form button {
+        font-size: 1rem; /* Kleinere Schriftgröße */
+    }

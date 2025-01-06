@@ -129,9 +129,10 @@ section {
     transform: translateY(-10px);
 }
 
+
 .card .material-symbols-outlined{
     color: black;
-
+}
 .card span {
     font-size: 3rem;
     color: #555;

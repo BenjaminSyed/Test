@@ -20,6 +20,64 @@ section {
     padding: 20px;
 }
 
+/* NAVBAR */
+nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: #1b1b1b;
+    padding: 10px 0;
+    z-index: 1000;
+}
+
+.menu {
+    width: auto;;
+    margin: 0 10px 0 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px 0 0;
+}
+
+.logo {
+    display: flex; /* Aktiviert Flexbox für die Logo-Sektion */
+    align-items: center; /* Zentriert Logo und Text vertikal */
+    gap: 10px; /* Abstand zwischen Icon und Text */
+}
+.logo h1{
+    color: white;
+}
+
+.menu .logo a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+
+.menu ul {
+    display: flex;
+    gap: 15px;
+}
+
+.menu ul li {
+    list-style: none;
+}
+
+.menu ul li a {
+    text-decoration: none;
+    font-size: 1.3rem;
+    color: white;
+    padding: 8px 15px;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+.menu ul li a:hover {
+    background: white;
+    color: black;
+}
+
 /* WILLKOMMEN */
 #Start {
     background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5)), url('kaufmann-mercantile-a7Woj8W6J0s-.jpg');
@@ -103,7 +161,7 @@ section {
     word-wrap: break-word;
     font-size: 2.5rem;
     background-color: #1b1b1b;
-    background: rgba(255, 255, 255, 0.1);
+    background: rgba(255, 255, 255, 0.8);
     border-radius: 10px;
     padding: 20px;
 }
@@ -121,8 +179,8 @@ section {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     padding: 20px;
     text-align: center;
-    flex: 1 1 calc(25% - 40px);
-    max-width: calc(25% - 40px);
+    flex: 1 1 calc(20% - 40px);
+    max-width: calc(20% - 40px);
     transition: transform 0.3s;
 }
 
@@ -144,10 +202,15 @@ section {
     margin-top: 20px;
     font-size: 1.7rem;
     color: #333;
+    min-height: 60px; /* Setze eine Mindesthöhe für Überschriften */
+    display: flex; 
+    align-items: center; /* Zentriert den Text vertikal */
+    justify-content: center; /* Zentriert den Text horizontal */
+    text-align: center; 
 }
 
 .card p {
-    margin-top: 10px;
+    margin-top: 20px;
     font-size: 1.3rem;
     color: #666;
 }
@@ -166,83 +229,55 @@ section {
     }
 }
 
-/* NAVBAR */
-nav {
-    position: fixed;
-    top: 0;
-    width: 100%;
-    background: #1b1b1b;
-    padding: 10px 0;
-    z-index: 1000;
-}
 
-.menu {
-    max-width: 1250px;
-    margin: 0 auto;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 20px 0 0;
-}
-
-.logo {
-    display: flex; /* Aktiviert Flexbox für die Logo-Sektion */
-    align-items: center; /* Zentriert Logo und Text vertikal */
-    gap: 10px; /* Abstand zwischen Icon und Text */
-}
-.logo h1{
-    color: white;
-}
-
-.menu .logo a {
-    text-decoration: none;
-    color: white;
-    font-size: 1.8rem;
-    font-weight: bold;
-}
-
-.menu ul {
-    display: flex;
-    gap: 15px;
-}
-
-.menu ul li {
-    list-style: none;
-}
-
-.menu ul li a {
-    text-decoration: none;
-    font-size: 1.3rem;
-    color: white;
-    padding: 8px 15px;
-    border-radius: 5px;
-    transition: background 0.3s;
-}
-
-.menu ul li a:hover {
-    background: white;
-    color: black;
-}
 
 /* KONTAKT */
 #Kontakt {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
     background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.2)), url('towfiqu-barbhuiya-ho-p7qLBewk-unsplash.jpg');
     background-size: cover;
     color: white;
-    text-align: center;
     padding: 50px 20px;
+  /*  min-height: auto;  Hebt die Mindesthöhe auf 
+    display: block; /* Ändert das Layout von Flexbox auf Block 
+    justify-content: unset; /* Entfernt zentrierende Ausrichtung
+    align-items: unset; /* Hebt die vertikale Zentrierung auf 
+    padding: 10px; /* Setzt einen spezifischen Padding-Wert */ 
+    
 }
 
-#Kontakt h1 {
-    font-size: 2rem;
+
+.contact-container{
+    display: flex;
+    justify-content: space-between;
+    gap: 5px;
+    flex-wrap: wrap;
+}
+
+.contact-info{
+    flex: 0 1 35%;
+    max-width:  35%;
+    padding: 50px 0 0 50px;
+    border-radius: 15px;
+}
+
+.contact-info h1 {
+    font-size: 2.5rem;
+}
+
+.contact-info h2{
+    font-size: 2.0rem;
+}
+
+.contact-info li{
+    text-decoration: none;
+    font-size: 1.5rem;
+    list-style: none;
 }
 
 /* Kontaktformular */
 .contact-form {
+    flex: 0 1 60%;
+
     max-width: 450px; /* Maximale Breite des Formulars */
     width: 100%; /* Passt sich kleineren Bildschirmen an */
     margin: 0 auto; /* Zentriert das Formular */
@@ -315,3 +350,4 @@ nav {
     .contact-form button {
         font-size: 1rem; /* Kleinere Schriftgröße */
     }
+}

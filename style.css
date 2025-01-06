@@ -140,6 +140,7 @@ section {
 }
 
 .card h2 {
+    word-wrap: break-word;
     margin-top: 20px;
     font-size: 1.7rem;
     color: #333;

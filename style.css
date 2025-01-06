@@ -276,10 +276,15 @@ nav {
 
 /* Kontaktformular */
 .contact-form {
+<<<<<<< HEAD
+    flex: 0 1 60%;
+    max-width: 60%; /* Maximale Breite des Formulars */
+=======
     flex: 0 1 60%;
 
     max-width: 450px; /* Maximale Breite des Formulars */
     width: 100%; /* Passt sich kleineren Bildschirmen an */
+>>>>>>> 5435786f642ffcd10a2d65bc9a865e9f8d6ad7fd
     margin: 0 auto; /* Zentriert das Formular */
     background: rgba(0, 0, 0, 0.7);
     padding: 30px;
@@ -329,6 +334,13 @@ nav {
     #Kontakt {
         padding: 30px 15px; /* Weniger Padding für kleinere Bildschirme */
     }
+    .contact-info,
+    .contact-form {
+        flex: 1 1 100%;  /* Beide Elemente erhalten jeweils 100% der Breite */
+        max-width: 100%; /* Verhindert Überschreiten der Container-Breite */
+        padding: 20px; /* Weniger Padding auf kleinen Bildschirmen */
+    }
+}
 
     #Kontakt h1 {
         font-size: 1.8rem; /* Kleinere Schriftgröße */

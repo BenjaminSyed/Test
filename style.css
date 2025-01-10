@@ -233,7 +233,7 @@ nav {
 
 /* KONTAKT */
 #Kontakt {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.2)), url('towfiqu-barbhuiya-ho-p7qLBewk-unsplash.jpg');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.2)), url('daniel-watson-8vBpYpTGo90-unsplash.jpg');
     background-size: cover;
     color: white;
     padding: 50px 20px;
@@ -247,16 +247,13 @@ nav {
 
 
 .contact-container{
-    display: flex;
-    justify-content: space-between;
+
     gap: 5px;
-    flex-wrap: wrap;
 }
 
 .contact-info{
-    flex: 0 1 35%;
-    max-width:  35%;
-    padding: 50px 0 0 50px;
+
+    padding: 50px;
     border-radius: 15px;
 }
 
@@ -264,8 +261,9 @@ nav {
     font-size: 2.5rem;
 }
 
-.contact-info h2{
-    font-size: 2.0rem;
+.contact-info h2 {
+    font-size: 1.7rem;
+    text-align: center;
 }
 
 .contact-info li{
@@ -277,7 +275,6 @@ nav {
 /* Kontaktformular */
 .contact-form {
     text-align: center;
-    flex: 0 1 60%;
     max-width: 60%; /* Maximale Breite des Formulars */
     margin: 0 auto; /* Zentriert das Formular */
     background: rgba(0, 0, 0, 0.7);

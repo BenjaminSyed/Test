@@ -13,6 +13,10 @@ html {
 
 /* Sektionen */
 section {
+      background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
     min-height: 100vh;
     display: flex;
     justify-content: center;
@@ -81,7 +85,6 @@ nav {
 /* WILLKOMMEN */
 #Start {
     background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5)), url('kaufmann-mercantile-a7Woj8W6J0s-.jpg');
-    background-size: cover;
     color: white;
     text-align: center;
 }
@@ -123,7 +126,6 @@ nav {
 /* ÜBER UNS */
 #ueberUns {
     background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url('pexels-muffin-2203683.jpg');
-    background-size: cover;
     color: white;
     text-align: center;
 }
@@ -150,7 +152,6 @@ nav {
     flex-direction: column;
     text-align: center;
     background-image: url('neatly-manicured-lawn-stretches-modern-wooden-barrier-casting-soft-shadows-warm-glow-peaceful-sunset.jpg');
-    background-size: cover;
 }
 
 .HeadLeistungen {
@@ -234,7 +235,6 @@ nav {
 /* KONTAKT */
 #Kontakt {
     background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.2)), url('daniel-watson-8vBpYpTGo90-unsplash (1).jpg');
-    background-size: cover;
     color: white;
     padding: 50px 20px;
   /*  min-height: auto;  Hebt die Mindesthöhe auf 

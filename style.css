@@ -341,7 +341,7 @@ nav {
 
     .contact-form input,
     .contact-form textarea {
-        font-size: 0.9rem; /* Kleinere Schriftgröße */
+        font-size: 1.0rem; /* Kleinere Schriftgröße */
     }
 
     .contact-form button {

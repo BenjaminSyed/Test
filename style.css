@@ -201,7 +201,7 @@ nav {
 .card h2 {
     word-wrap: break-word;
     margin-top: 20px;
-    font-size: 1.7rem;
+    font-size: 1.8rem;
     color: #333;
     min-height: 60px; /* Setze eine Mindesthöhe für Überschriften */
     display: flex; 
@@ -212,7 +212,7 @@ nav {
 
 .card p {
     margin-top: 20px;
-    font-size: 1.3rem;
+    font-size: 1.4rem;
     color: #666;
 }
 

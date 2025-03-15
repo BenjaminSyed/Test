@@ -1,4 +1,4 @@
-7/* Allgemein */
+/* Allgemein */
 * {
     padding: 0;
     margin: 0;
@@ -6,7 +6,18 @@
     font-weight: 400;
     box-sizing: border-box;
 }
+ 
+h1 {
+    font-size: clamp(1.5rem, 5vw, 3rem);
+}
 
+h2 {
+        font-size: clamp(1.3rem, 3vw, 1.5rem);
+}
+
+p{
+    font-size: 1.8rem;
+}
 html {
     scroll-behavior: smooth;
 }
@@ -50,6 +61,7 @@ nav {
 }
 .logo h1{
     color: white;
+    font-size: 1.8rem
 }
 
 .menu .logo a {
@@ -70,7 +82,7 @@ nav {
 
 .menu ul li a {
     text-decoration: none;
-    font-size: 1.3rem;
+    font-size: 1.5rem;
     color: white;
     padding: 8px 15px;
     border-radius: 5px;
@@ -96,17 +108,16 @@ nav {
 }
 
 .ContainerWillkommen h1 {
-    font-size: 2.7rem;
     margin-bottom: 20px;
 }
 
 .ContainerWillkommen h2 {
-    font-size: 1.6rem;
     margin-bottom: 30px;
 }
 
 .ContainerWillkommen .button-28 {
     display: inline-block;
+    margin-top: 20px;
     padding: 10px 20px;
     font-size: 1.2rem;
     color: black;
@@ -137,13 +148,12 @@ nav {
     border-radius: 15px;
 }
 
+
 .ÜberUns h1 {
-    font-size: 2.5rem;
     margin-bottom: 20px;
 }
 
 .ÜberUns p {
-    font-size: 1.7rem;
     line-height: 1.6;
 }
 
@@ -160,7 +170,6 @@ nav {
 
 .HeadLeistungen h1 {
     word-wrap: break-word;
-    font-size: 2.5rem;
     background-color: #1b1b1b;
     background: rgba(255, 255, 255, 0.8);
     border-radius: 10px;
@@ -201,7 +210,6 @@ nav {
 .card h2 {
     word-wrap: break-word;
     margin-top: 20px;
-    font-size: 1.8rem;
     color: #333;
     min-height: 60px; /* Setze eine Mindesthöhe für Überschriften */
     display: flex; 
@@ -212,7 +220,6 @@ nav {
 
 .card p {
     margin-top: 20px;
-    font-size: 1.4rem;
     color: #666;
 }
 
@@ -254,12 +261,10 @@ nav {
 .contact-info{
     text-align: center;
     padding: 50px;
+    margin-bottom: 10px;
     border-radius: 15px;
-}
-
-.contact-info h1 {
-    font-size: 2.5rem;
-   
+    background: rgba(255, 255, 255, 0.5);
+    color: #1b1b1b;
 }
 
 .contact-info h2 {
@@ -286,7 +291,6 @@ nav {
     display: block;
     font-weight: bold;
     margin-bottom: 5px;
-    font-size: 1.5rem;
 }
 
 .contact-form input,
@@ -295,7 +299,7 @@ nav {
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 5px;
-    font-size: 1.1112rem;
+    font-size: 1.5rem
 }
 
 .contact-form button {
@@ -306,7 +310,7 @@ nav {
     border-radius: 5px;
     cursor: pointer;
     transition: background 0.3s;
-    font-size: 1.2rem;
+    font-size: 1.4rem;
 }
 
 .contact-form button:hover {
@@ -328,7 +332,6 @@ nav {
 }
 
     #Kontakt h1 {
-        font-size: 1.8rem; /* Kleinere Schriftgröße */
     }
 
     .contact-form {
@@ -336,14 +339,17 @@ nav {
     }
 
     .contact-form label {
-        font-size: 1.2rem; /* Kleinere Schriftgröße */
+        font-size: 1.4rem; /* Kleinere Schriftgröße */
     }
 
     .contact-form input,
     .contact-form textarea {
-        font-size: 1.0rem; /* Kleinere Schriftgröße */
+        font-size: 1.4rem; /* Kleinere Schriftgröße */
     }
 
     .contact-form button {
-        font-size: 1rem; /* Kleinere Schriftgröße */
+        font-size: 1.2rem; /* Kleinere Schriftgröße */
     }
+
+
+    

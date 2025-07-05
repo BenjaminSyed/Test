@@ -6,25 +6,15 @@
     font-weight: 400;
     box-sizing: border-box;
 }
- 
-h1 {
-    font-size: clamp(1.5rem, 5vw, 3rem);
-}
 
-h2 {
-        font-size: clamp(1.3rem, 3vw, 1.5rem);
-}
-
-p{
-    font-size: 1.8rem;
-}
 html {
     scroll-behavior: smooth;
+   
 }
 
 /* Sektionen */
 section {
-      background-size: cover;
+    background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
     background-attachment: fixed;
@@ -45,6 +35,70 @@ nav {
     z-index: 1000;
 }
 
+.navigation-items {
+  display: flex;
+}
+
+.hamburger {
+  display: none;
+  font-size: 2rem;
+  cursor: pointer;
+  color: white;
+}
+@media (max-width: 768px) {
+  .navigation-items {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 58px;
+    right: 20px;
+    width: 220px;
+    background: rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(8px);
+    padding: 1rem;
+    border-radius: 12px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+    z-index: 999;
+    transform: scale(0.95);
+    opacity: 0;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    pointer-events: none;
+  }
+
+  .navigation-items.show {
+    display: flex;
+    opacity: 1;
+    transform: scale(1);
+    pointer-events: auto;
+  }
+
+  .navigation-items a {
+    color: white;
+    padding: 10px 15px;
+    border-radius: 8px;
+    text-align: center;
+    font-size: 1.1rem;
+    transition: background 0.3s;
+  }
+
+  .navigation-items a:hover {
+    background-color: rgba(255, 255, 255, 0.8);
+    color: #111;
+  }
+
+  .hamburger {
+    display: block;
+    font-size: 2rem;
+    cursor: pointer;
+    color: white;
+  }
+
+  .menu {
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
 .menu {
     width: auto;;
     margin: 0 10px 0 20px;
@@ -61,7 +115,6 @@ nav {
 }
 .logo h1{
     color: white;
-    font-size: 1.8rem
 }
 
 .menu .logo a {
@@ -82,7 +135,7 @@ nav {
 
 .menu ul li a {
     text-decoration: none;
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     color: white;
     padding: 8px 15px;
     border-radius: 5px;
@@ -108,16 +161,17 @@ nav {
 }
 
 .ContainerWillkommen h1 {
+    font-size: 2.5rem;
     margin-bottom: 20px;
 }
 
 .ContainerWillkommen h2 {
+    font-size: 1.5rem;
     margin-bottom: 30px;
 }
 
 .ContainerWillkommen .button-28 {
     display: inline-block;
-    margin-top: 20px;
     padding: 10px 20px;
     font-size: 1.2rem;
     color: black;
@@ -137,6 +191,7 @@ nav {
 /* ÜBER UNS */
 #ueberUns {
     background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url('pexels-muffin-2203683.jpg');
+    background-size: cover;
     color: white;
     text-align: center;
 }
@@ -148,12 +203,13 @@ nav {
     border-radius: 15px;
 }
 
-
 .ÜberUns h1 {
+    font-size: 2.5rem;
     margin-bottom: 20px;
 }
 
 .ÜberUns p {
+    font-size: 1.5rem;
     line-height: 1.6;
 }
 
@@ -162,6 +218,7 @@ nav {
     flex-direction: column;
     text-align: center;
     background-image: url('neatly-manicured-lawn-stretches-modern-wooden-barrier-casting-soft-shadows-warm-glow-peaceful-sunset.jpg');
+    background-size: cover;
 }
 
 .HeadLeistungen {
@@ -170,6 +227,7 @@ nav {
 
 .HeadLeistungen h1 {
     word-wrap: break-word;
+    font-size: 2.5rem;
     background-color: #1b1b1b;
     background: rgba(255, 255, 255, 0.8);
     border-radius: 10px;
@@ -210,6 +268,7 @@ nav {
 .card h2 {
     word-wrap: break-word;
     margin-top: 20px;
+    font-size: 1.7rem;
     color: #333;
     min-height: 60px; /* Setze eine Mindesthöhe für Überschriften */
     display: flex; 
@@ -220,6 +279,7 @@ nav {
 
 .card p {
     margin-top: 20px;
+    font-size: 1.3rem;
     color: #666;
 }
 
@@ -241,7 +301,8 @@ nav {
 
 /* KONTAKT */
 #Kontakt {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.2)), url('daniel-watson-8vBpYpTGo90-unsplash (1).jpg');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.2)), url('daniel-watson-8vBpYpTGo90-unsplash\ \(1\).jpg');
+    background-size: cover;
     color: white;
     padding: 50px 20px;
   /*  min-height: auto;  Hebt die Mindesthöhe auf 
@@ -261,14 +322,22 @@ nav {
 .contact-info{
     text-align: center;
     padding: 50px;
-    margin-bottom: 10px;
     border-radius: 15px;
-    background: rgba(255, 255, 255, 0.5);
-    color: #1b1b1b;
+}
+
+.contact-info h1 {
+    font-size: 2.5rem;
 }
 
 .contact-info h2 {
     font-size: 1.7rem;
+    text-align: center;
+}
+
+.contact-info li{
+    text-decoration: none;
+    font-size: 1.5rem;
+    list-style: none;
 }
 
 /* Kontaktformular */
@@ -291,6 +360,7 @@ nav {
     display: block;
     font-weight: bold;
     margin-bottom: 5px;
+    font-size: 1.5rem;
 }
 
 .contact-form input,
@@ -299,7 +369,7 @@ nav {
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 5px;
-    font-size: 1.5rem
+    font-size: 1.1112rem;
 }
 
 .contact-form button {
@@ -310,7 +380,7 @@ nav {
     border-radius: 5px;
     cursor: pointer;
     transition: background 0.3s;
-    font-size: 1.4rem;
+    font-size: 1.2rem;
 }
 
 .contact-form button:hover {
@@ -332,6 +402,7 @@ nav {
 }
 
     #Kontakt h1 {
+        font-size: 1.8rem; /* Kleinere Schriftgröße */
     }
 
     .contact-form {
@@ -339,17 +410,65 @@ nav {
     }
 
     .contact-form label {
-        font-size: 1.4rem; /* Kleinere Schriftgröße */
+        font-size: 1.2rem; /* Kleinere Schriftgröße */
     }
 
     .contact-form input,
     .contact-form textarea {
-        font-size: 1.4rem; /* Kleinere Schriftgröße */
+        font-size: 0.9rem; /* Kleinere Schriftgröße */
     }
 
     .contact-form button {
-        font-size: 1.2rem; /* Kleinere Schriftgröße */
+        font-size: 1rem; /* Kleinere Schriftgröße */
     }
 
 
-    
+/* Footer */
+.site-footer {
+    background-color: #1b1b1b;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    font-size: 1rem;
+    border-top: 1px solid #444;
+}
+
+.site-footer .footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.site-footer .footer-nav {
+    display: flex;
+    gap: 20px;
+}
+
+.site-footer .footer-nav a {
+    all: unset; /* entfernt Browser-Standardstyles */
+    color: white;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+    text-decoration: none;
+}
+
+.site-footer .footer-nav a:hover {
+    color: #bbb;
+    text-decoration: underline;
+}
+
+/* Responsive Footer */
+@media (max-width: 600px) {
+    .site-footer .footer-content {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .site-footer .footer-nav {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
+

@@ -470,3 +470,9 @@ nav {
     }
 }
 
+@media (max-width: 768px) {
+  section {
+    background-attachment: scroll !important;
+    background-position: center top;
+  }
+}

@@ -77,7 +77,7 @@ nav {
     padding: 10px 15px;
     border-radius: 8px;
     text-align: center;
-    font-size: 1.1rem;
+    font-size: 1.2rem;
     transition: background 0.3s;
   }
 
@@ -135,7 +135,7 @@ nav {
 
 .menu ul li a {
     text-decoration: none;
-    font-size: 1.3rem;
+    font-size: 1.4rem;
     color: white;
     padding: 8px 15px;
     border-radius: 5px;
@@ -166,7 +166,7 @@ nav {
 }
 
 .ContainerWillkommen h2 {
-    font-size: 1.5rem;
+    font-size: 1.6rem;
     margin-bottom: 30px;
 }
 
@@ -209,7 +209,7 @@ nav {
 }
 
 .ÜberUns p {
-    font-size: 1.5rem;
+    font-size: 1.6rem;
     line-height: 1.6;
 }
 
@@ -279,7 +279,7 @@ nav {
 
 .card p {
     margin-top: 20px;
-    font-size: 1.3rem;
+    font-size: 1.5rem;
     color: #666;
 }
 
@@ -369,7 +369,7 @@ nav {
     padding: 15px;
     border: 1px solid #ccc;
     border-radius: 5px;
-    font-size: 1.2rem;
+    font-size: 1.5rem;
 }
 
 .contact-form button {
